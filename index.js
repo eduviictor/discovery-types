@@ -42,6 +42,71 @@ const isDocument = (name) => {
   return docsExt.has(path.extname(name).slice(1));
 };
 
+const verify = (name) => {
+  // Verify if file is a image
+  const image = isImage(name);
+  if (image) {
+    return {
+      type: "image",
+      ext: path.extname(name).slice(1),
+    };
+  }
+
+  // Verify if file is a audio
+  const audio = isAudio(name);
+  if (audio) {
+    return {
+      type: "audio",
+      ext: path.extname(name).slice(1),
+    };
+  }
+
+  // Verify if file is a compressed file
+  const compressed = isCompressed(name);
+  if (compressed) {
+    return {
+      type: "compressed",
+      ext: path.extname(name).slice(1),
+    };
+  }
+
+  // Verify if file is a executable file
+  const executable = isExecutable(name);
+  if (executable) {
+    return {
+      type: "executable",
+      ext: path.extname(name).slice(1),
+    };
+  }
+
+  // Verify if file is a font
+  const font = isFont(name);
+  if (font) {
+    return {
+      type: "font",
+      ext: path.extname(name).slice(1),
+    };
+  }
+
+  // Verify if file is a video
+  const video = isVideo(name);
+  if (video) {
+    return {
+      type: "video",
+      ext: path.extname(name).slice(1),
+    };
+  }
+
+  // Verify if file is a document
+  const document = isDocument(name);
+  if (document) {
+    return {
+      type: "document",
+      ext: path.extname(name).slice(1),
+    };
+  }
+};
+
 module.exports = {
   isAudio,
   isImage,
@@ -50,4 +115,5 @@ module.exports = {
   isFont,
   isVideo,
   isDocument,
+  verify,
 };
