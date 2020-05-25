@@ -5,6 +5,7 @@ const compresseds = require("./compresseds.json");
 const executables = require("./executables.json");
 const fonts = require("./fonts.json");
 const videos = require("./videos.json");
+const docs = require("./docs.json");
 
 const isAudio = (name) => {
   const audiosExt = new Set(audios);
@@ -36,6 +37,11 @@ const isVideo = (name) => {
   return videosExt.has(path.extname(name).slice(1));
 };
 
+const isDocument = (name) => {
+  const docsExt = new Set(docs);
+  return docsExt.has(path.extname(name).slice(1));
+};
+
 module.exports = {
   isAudio,
   isImage,
@@ -43,4 +49,5 @@ module.exports = {
   isExecutable,
   isFont,
   isVideo,
+  isDocument,
 };
