@@ -2,6 +2,7 @@ const path = require("path");
 const audios = require("./audios.json");
 const images = require("./images.json");
 const compresseds = require("./compresseds.json");
+const executables = require("./executables.json");
 
 const isAudio = (name) => {
   const audiosExt = new Set(audios);
@@ -18,6 +19,14 @@ const isCompressed = (name) => {
   return compressedsExt.has(path.extname(name).slice(1));
 };
 
+const isExecutable = (name) => {
+  const executablesExt = new Set(executables);
+  return executablesExt.has(path.extname(name).slice(1));
+};
+
 module.exports = {
   isAudio,
+  isImage,
+  isCompressed,
+  isExecutable,
 };
