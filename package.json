@@ -1,5 +1,5 @@
 {
-  "name": "@eduviictor/file-types",
+  "name": "discovery-types",
   "version": "1.0.0",
   "description": "Check types of file",
   "main": "index.js",
