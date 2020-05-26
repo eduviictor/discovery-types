@@ -2,6 +2,11 @@
   "name": "discovery-types",
   "version": "1.0.0",
   "description": "Check types of file",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eduviictor/discovery-types"
+  },
+  "homepage": "https://github.com/eduviictor/discovery-types",
   "main": "index.js",
   "author": {
     "name": "Eduardo Victor",
