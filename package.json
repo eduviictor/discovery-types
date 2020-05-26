@@ -1,7 +1,33 @@
 {
   "name": "file-types",
   "version": "1.0.0",
+  "description": "Check types of file",
   "main": "index.js",
-  "author": "eduviictor",
-  "license": "MIT"
+  "author": {
+    "name": "Eduardo Victor",
+    "email": "eduvictornobrega@gmail.com"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "extension",
+    "extensions",
+    "type",
+    "types",
+    "file",
+    "image",
+    "audio",
+    "video",
+    "picture",
+    "img",
+    "is",
+    "document",
+    "doc",
+    "compressed",
+    "font",
+    "executable"
+  ]
 }
