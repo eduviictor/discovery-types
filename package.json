@@ -9,6 +9,7 @@
   "homepage": "https://github.com/eduviictor/discovery-types",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "typings": "dist/index.d.ts",
   "author": {
     "name": "Eduardo Victor",
     "email": "eduvictornobrega@gmail.com"
@@ -17,7 +18,7 @@
   "files": [
     "index.js"
   ],
-  "prepublish": "tsc",
+  "prepublish": "tsc --declaration",
   "keywords": [
     "extension",
     "extensions",
