@@ -1,11 +1,11 @@
 const path = require("path");
-const audios = require("./audios.json");
-const images = require("./images.json");
-const compresseds = require("./compresseds.json");
-const executables = require("./executables.json");
-const fonts = require("./fonts.json");
-const videos = require("./videos.json");
-const docs = require("./docs.json");
+const audios = require("./formats/audios.json");
+const images = require("./formats/images.json");
+const compresseds = require("./formats/compresseds.json");
+const executables = require("./formats/executables.json");
+const fonts = require("./formats/fonts.json");
+const videos = require("./formats/videos.json");
+const docs = require("./formats/docs.json");
 
 const isAudio = (name) => {
   const audiosExt = new Set(audios);
