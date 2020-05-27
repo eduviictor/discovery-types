@@ -15,22 +15,22 @@ $ yarn add discovery-types
 ## Usage
 
 ```js
-const discoveryTypes = require("discovery-types");
+const discoveryTypes = require('discovery-types');
 ```
 
-- isAudio(value):
+- isAudio(name):
   This function verify if file is a audio.
-- isCompressed(value):
+- isCompressed(name):
   This function verify if is a compressed file.
-- isDocument(value):
+- isDocument(name):
   This function verify if file is a document.
-- isExecutable(value):
+- isExecutable(name):
   This function verify if is a executable file.
-- isFont(value):
+- isFont(name):
   This function verify if file is a font.
-- isImage(value):
+- isImage(name):
   This function verify if file is a image.
-- isVideo(value):
+- isVideo(name):
   This function verify if file is a video.
-- verify(value):
+- verify(name):
   This function checks what type your file is.
