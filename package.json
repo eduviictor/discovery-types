@@ -6,9 +6,6 @@
     "type": "git",
     "url": "https://github.com/eduviictor/discovery-types"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "homepage": "https://github.com/eduviictor/discovery-types",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
