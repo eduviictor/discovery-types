@@ -16,6 +16,8 @@ $ yarn add discovery-types
 
 ```js
 const discoveryTypes = require('discovery-types');
+or
+import discoveryTypes from 'discovery-types';
 ```
 
 - isAudio(name):
