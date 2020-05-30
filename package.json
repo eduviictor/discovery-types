@@ -1,6 +1,6 @@
 {
   "name": "discovery-types",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Check types of file",
   "repository": {
     "type": "git",
@@ -18,6 +18,10 @@
   "files": [
     "index.js"
   ],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "tsc"
+  },
   "prepublish": "tsc --declaration",
   "keywords": [
     "extension",
