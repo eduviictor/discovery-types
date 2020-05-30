@@ -16,7 +16,8 @@
   },
   "license": "MIT",
   "files": [
-    "index.js"
+    "src/index.js",
+    "src/formats"
   ],
   "scripts": {
     "build": "tsc",
