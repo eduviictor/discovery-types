@@ -1,6 +1,6 @@
 {
   "name": "discovery-types",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "Check types of file",
   "repository": {
     "type": "git",
