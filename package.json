@@ -1,6 +1,6 @@
 {
   "name": "discovery-types",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Check types of file",
   "repository": {
     "type": "git",
@@ -16,9 +16,9 @@
   },
   "license": "MIT",
   "files": [
-    "index.js",
-    "index.d.ts",
-    "formats"
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/formats"
   ],
   "scripts": {
     "build": "tsc",
